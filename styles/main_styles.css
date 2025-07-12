@@ -1,6 +1,72 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* --- Modern UI Enhancements --- */
+
+/* Animated gradient for header and footer */
+.header, .footer, .copyright {
+	background: linear-gradient(270deg, #283290, #20d34a, #283290);
+	background-size: 600% 600%;
+	animation: gradientBG 16s ease infinite;
+}
+@keyframes gradientBG {
+	0% {background-position:0% 50%}
+	50% {background-position:100% 50%}
+	100% {background-position:0% 50%}
+}
+
+/* Sticky navigation bar */
+.header {
+	position: sticky;
+	top: 0;
+	box-shadow: 0 2px 12px rgba(40,50,144,0.08);
+	z-index: 1000;
+}
+
+/* Enhanced buttons */
+.button, .button a {
+	border-radius: 30px;
+	background: linear-gradient(90deg, #20d34a 0%, #283290 100%);
+	box-shadow: 0 4px 16px rgba(40,50,144,0.10);
+	transition: background 0.4s, box-shadow 0.3s;
+}
+.button:hover, .button:hover a {
+	background: linear-gradient(90deg, #283290 0%, #20d34a 100%);
+	box-shadow: 0 8px 24px rgba(40,50,144,0.18);
+}
+
+/* Card/box enhancements */
+.box, .dept, .service {
+	border-radius: 18px;
+	box-shadow: 0 2px 16px rgba(32,211,74,0.07);
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+.box:hover, .dept:hover, .service:hover {
+	box-shadow: 0 8px 32px rgba(40,50,144,0.16);
+	transform: translateY(-6px) scale(1.03);
+}
+
+/* Rounded images */
+.about_image img, .dept_image img, .service_icon img, .logo_img {
+	border-radius: 12px;
+}
+
+/* Smooth scroll for anchor links */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Subtle hover for nav links */
+.main_nav ul li a, .menu_list li a {
+	border-radius: 8px;
+	padding: 6px 14px;
+	transition: background 0.2s, color 0.2s;
+}
+.main_nav ul li a:hover, .menu_list li a:hover {
+	background: #20d34a;
+	color: #fff !important;
+}
+
 /******************************
 
 [Table of Contents]
@@ -30,6 +96,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
+body, p, h1, h2, h3, h4, h5, h6, .main_nav ul li a, .menu_list li a, .button a {
+	font-family: 'Poppins', 'Roboto', Arial, sans-serif !important;
+}
+
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -55,8 +125,8 @@ div
 	display: block;
 	position: relative;
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 ul
 {
@@ -212,8 +282,8 @@ section
 }
 .parallax-window
 {
-    min-height: 400px;
-    background: transparent;
+	min-height: 400px;
+	background: transparent;
 }
 .nopadding
 {
