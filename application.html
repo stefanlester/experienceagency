@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<title>Job Application - Experience Agency</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Experience Agency - Healthcare and Social Care Recruitment Application Form">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/contact.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<style>
+.application_form {
+    padding: 40px 0;
+}
+.form_section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+.form_section h4 {
+    color: #20d34a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.checkbox_group, .radio_group {
+    margin: 15px 0;
+}
+.checkbox_group label, .radio_group label {
+    font-weight: 400;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.file_upload {
+    margin: 15px 0;
+}
+.file_upload input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #20d34a;
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+}
+select.contact_input {
+    height: 50px;
+    padding: 0 15px;
+}
+.input_container {
+    position: relative;
+}
+.date_label {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 12px;
+    color: #666;
+    background: white;
+    padding: 0 5px;
+}
+.radio_group {
+    display: inline-block;
+    margin-right: 20px;
+}
+table input.contact_input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 8px;
+    height: auto;
+}
+table input.contact_input:focus {
+    outline: 2px solid #20d34a;
+    border-radius: 3px;
+}
+.legal_text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #20d34a;
+    border-radius: 3px;
+}
+.criminal_section p {
+    margin-bottom: 10px;
+}
+
+/* Button Fix - Ensure text stays on top of green overlay */
+.button {
+    position: relative;
+    overflow: hidden;
+}
+.button span, .button a {
+    position: relative;
+    z-index: 20 !important;
+    color: #FFFFFF !important;
+    pointer-events: none;
+}
+.button::after {
+    z-index: 1 !important;
+}
+
+/* Navbar Fix - Ensure proper positioning */
+.header_container {
+    position: relative;
+    z-index: 5;
+}
+.main_nav {
+    position: relative;
+    z-index: 6;
+    margin-left: 250px !important; /* Move navbar right to avoid logo overlap */
+}
+.main_nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main_nav ul li {
+    margin-left: 15px; /* Reduce spacing between items */
+    display: inline-block;
+    vertical-align: middle;
+}
+.main_nav ul li a {
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 8px 12px;
+}
+.logo_container_outer {
+    z-index: 15;
+}
+.logo_container {
+    z-index: 16 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main_nav {
+        margin-left: 220px !important;
+    }
+    .main_nav ul li {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .main_nav {
+        display: none; /* Hide on mobile, use hamburger menu */
+    }
+}
+</style>
+</head>
+<body style="font-family: 'Poppins', 'Roboto', Arial, sans-serif;">
+
+<div class="super_container">
+	
+		<!-- Header -->
+		<header class="header trans_200">
+		
+			<!-- Top Bar -->
+			<div class="top_bar">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<div class="top_bar_item"><a href="#">beatrice@ehcrecruitment.com</a></div>
+								<div class="top_bar_item"><a href="contact.html">Request an Appointment</a></div>
+								<div class="emergencies  d-flex flex-row align-items-center justify-content-start ml-auto">For Emergencies: 01452 238415</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Header Content -->
+			<div class="header_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_content d-flex flex-row align-items-center justify-content-start">
+								<nav class="main_nav ml-auto">
+									<ul>
+										<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+										<li class="menu_item menu_mm"><a href="nurses.html">Nurses</a></li>
+										<li class="menu_item menu_mm"><a href="workers.html">Healthcare Workers</a></li>
+										<li class="menu_item menu_mm"><a href="cleaners.html">Healthcare Cleaners</a></li>
+										<li class="menu_item menu_mm"><a href="assistants.html">Assistants</a></li>
+										<li class="menu_item menu_mm"><a href="application.html">Apply Online</a></li>
+										<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+								<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Logo -->
+			<div class="logo_container_outer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="logo_container">
+								<a href="index.html">
+									<div class="logo_content d-flex flex-column align-items-start justify-content-center">
+										<div class="logo_line"></div>
+										<div class="logo d-flex flex-row align-items-center justify-content-center">
+											<img src="images/newlogo1.png" alt="CareMed Logo" class="logo_img me-2" />
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</header>
+	
+		<!-- Menu -->
+		<div class="menu_container menu_mm">
+			<div class="menu_close_container">
+				<div class="menu_close"></div>
+			</div>
+			<div class="menu_inner menu_mm">
+				<div class="menu menu_mm">
+					<ul class="menu_list menu_mm">
+						<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+						<li class="menu_item menu_mm"><a href="nurses.html">Nurses</a></li>
+						<li class="menu_item menu_mm"><a href="workers.html">Healthcare Workers</a></li>
+						<li class="menu_item menu_mm"><a href="cleaners.html">Healthcare Cleaners</a></li>
+						<li class="menu_item menu_mm"><a href="assistants.html">Assistants</a></li>
+						<li class="menu_item menu_mm"><a href="application.html">Apply Online</a></li>
+						<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="menu_extra">
+					<div class="menu_appointment"><a href="#">beatrice@ehcrecruitment.com</a></div>
+					<div class="menu_emergencies">For Emergencies: 01452 238415</div>
+				</div>
+			</div>
+		</div>
+		
+	<!-- Home -->
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"><span>Job</span> Application</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>Application</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Application Form -->
+	<div class="application_form">
+		<div class="container">
+			<div class="section_title"><h2>Job Application Form <span aria-label="clipboard" role="img">📋</span></h2></div>
+			<div class="contact_text text-center mb-4">
+				<p>Please complete all sections of this application form. All information will be treated confidentially.</p>
+			</div>
+
+			<form action="#" id="application_form" class="contact_form">
+				
+				<!-- Position Applied For -->
+				<div class="form_section">
+					<h4>Position Applied For</h4>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Position Applied For" name="position" required>
+					</div>
+				</div>
+
+				<!-- Personal Details -->
+				<div class="form_section">
+					<h4>Personal Details</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="First Name" name="first_name" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Last Name" name="last_name" required>
+							</div>
+						</div>
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Address" name="address" required>
+					</div>
+					<div class="row" style="margin-top: 15px;">
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="dob" required style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Date of Birth</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px;">
+								<input type="text" class="contact_input" placeholder="National Insurance Number" name="ni_number" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input_container">
+								<input type="tel" class="contact_input" placeholder="Telephone Number" name="telephone" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input_container">
+								<input type="tel" class="contact_input" placeholder="Mobile Number" name="mobile">
+							</div>
+						</div>
+					</div>
+					<div class="input_container">
+						<input type="email" class="contact_input" placeholder="Email" name="email" required>
+					</div>
+					
+					<!-- Car Ownership -->
+					<div class="row" style="margin-top: 20px;">
+						<div class="col-md-6">
+							<div style="margin-bottom: 10px;">
+								<label style="font-weight: 500; margin-bottom: 10px; display: block;">Do you own a car:</label>
+								<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+									<input type="radio" id="car_yes" name="own_car" value="yes" required>
+									<label for="car_yes">Yes</label>
+								</div>
+								<div class="radio_group" style="display: inline-block;">
+									<input type="radio" id="car_no" name="own_car" value="no">
+									<label for="car_no">No</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div style="margin-bottom: 10px;">
+								<label style="font-weight: 500; margin-bottom: 10px; display: block;">Has a current driving licence:</label>
+								<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+									<input type="radio" id="licence_yes" name="driving_licence" value="yes" required>
+									<label for="licence_yes">Yes</label>
+								</div>
+								<div class="radio_group" style="display: inline-block;">
+									<input type="radio" id="licence_no" name="driving_licence" value="no">
+									<label for="licence_no">No</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Languages Spoken" name="languages">
+					</div>
+				</div>
+
+				<!-- Employment -->
+				<div class="form_section">
+					<h4>Employment History</h4>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Present/Last Employer" name="present_employer">
+					</div>
+					<div class="row" style="margin-top: 15px;">
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="employment_start_date" style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Start Date</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="employment_end_date" style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">End Date</label>
+							</div>
+						</div>
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Address" name="employer_address">
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Job Title" name="job_title">
+					</div>
+					<div class="input_container">
+						<textarea class="contact_input contact_text_area" placeholder="Duties/Responsibilities:" name="duties" rows="5"></textarea>
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Reason For Leaving" name="reason_leaving">
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Finishing Pay" name="finishing_pay">
+					</div>
+				</div>
+
+				<!-- Previous Employer -->
+				<div class="form_section">
+					<h4>Previous Employer</h4>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Previous Employer" name="previous_employer">
+					</div>
+					<div class="row" style="margin-top: 15px;">
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="previous_start_date" style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Start Date</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="previous_end_date" style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">End Date</label>
+							</div>
+						</div>
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Address" name="previous_employer_address">
+					</div>
+					<div class="input_container" style="margin-bottom: 15px;">
+						<input type="text" class="contact_input" placeholder="Job Title" name="previous_job_title">
+					</div>
+					<div class="input_container">
+						<textarea class="contact_input contact_text_area" placeholder="Duties/Responsibilities:" name="previous_duties" rows="5"></textarea>
+					</div>
+					<div class="input_container">
+						<input type="text" class="contact_input" placeholder="Reason For Leaving" name="previous_reason_leaving">
+					</div>
+					<div class="input_container">
+						<input type="text" class="contact_input" placeholder="Finishing Pay" name="previous_finishing_pay">
+					</div>
+				</div>
+
+				<!-- Criminal Conviction -->
+				<div class="form_section">
+					<h4>Criminal Convictions</h4>
+					<div style="margin-bottom: 20px;">
+						<p style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;">
+							<strong>Do you have any criminal convictions, cautions, reprimands or final warnings that are not "protected" as defined by the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (as amended in 2013)?</strong>
+						</p>
+						<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+							<input type="radio" id="criminal_yes" name="criminal_conviction" value="yes" required>
+							<label for="criminal_yes">Yes</label>
+						</div>
+						<div class="radio_group" style="display: inline-block;">
+							<input type="radio" id="criminal_no" name="criminal_conviction" value="no">
+							<label for="criminal_no">No</label>
+						</div>
+					</div>
+					
+					<div style="margin-bottom: 20px;">
+						<p style="font-size: 13px; line-height: 1.5; color: #666; margin-bottom: 15px;">
+							The amendments to the exceptions order 1975 (2013) provide that certain spent convictions and cautions are "protected" and are not subject to disclosure to employers and cannot be taken into account. Guidance and criteria on the filtering of these cautions and convictions can be found on the Disclosure and Barring Service website.
+						</p>
+						<p style="font-size: 13px; line-height: 1.5; color: #666; margin-bottom: 15px;">
+							<strong>(Declaration subject to the Rehabilitation of Offenders Act 1974)</strong>
+						</p>
+						<p style="font-size: 14px; font-weight: 500; margin-bottom: 10px;">If yes, give details:</p>
+					</div>
+					
+					<div class="input_container">
+						<textarea class="contact_input contact_text_area" placeholder="Please provide details if you answered 'Yes' above..." name="criminal_details" rows="4"></textarea>
+					</div>
+				</div>
+
+				<!-- Education & Training -->
+				<div class="form_section">
+					<h4>Education & Training</h4>
+					<div style="overflow-x: auto;">
+						<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+							<thead>
+								<tr>
+									<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; width: 50%;">Institution Name/Address</th>
+									<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; width: 50%;">Qualification Achieved</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Institution Name/Address" name="institution1" style="border: none; background: transparent; width: 100%;">
+									</td>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Qualification Achieved" name="qualification1" style="border: none; background: transparent; width: 100%;">
+									</td>
+								</tr>
+								<tr>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Institution Name/Address" name="institution2" style="border: none; background: transparent; width: 100%;">
+									</td>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Qualification Achieved" name="qualification2" style="border: none; background: transparent; width: 100%;">
+									</td>
+								</tr>
+								<tr>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Institution Name/Address" name="institution3" style="border: none; background: transparent; width: 100%;">
+									</td>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Qualification Achieved" name="qualification3" style="border: none; background: transparent; width: 100%;">
+									</td>
+								</tr>
+								<tr>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Institution Name/Address" name="institution4" style="border: none; background: transparent; width: 100%;">
+									</td>
+									<td style="border: 1px solid #ddd; padding: 8px;">
+										<input type="text" class="contact_input" placeholder="Qualification Achieved" name="qualification4" style="border: none; background: transparent; width: 100%;">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div style="margin-top: 20px;">
+						<label style="font-weight: 500; margin-bottom: 10px; display: block;">Membership of Professional Body:</label>
+						<div class="input_container">
+							<input type="text" class="contact_input" placeholder="Name" name="professional_body">
+						</div>
+					</div>
+				</div>
+
+				<!-- Right to Work -->
+				<div class="form_section">
+					<h4>Right to Work in the UK</h4>
+					<div class="radio_group">
+						<input type="radio" id="uk_citizen" name="right_to_work" value="uk_citizen" required>
+						<label for="uk_citizen">UK Citizen</label>
+					</div>
+					<div class="radio_group">
+						<input type="radio" id="eu_citizen" name="right_to_work" value="eu_citizen">
+						<label for="eu_citizen">EU Citizen</label>
+					</div>
+					<div class="radio_group">
+						<input type="radio" id="work_visa" name="right_to_work" value="work_visa">
+						<label for="work_visa">Work Visa/Permit</label>
+					</div>
+					<div class="radio_group">
+						<input type="radio" id="other_status" name="right_to_work" value="other">
+						<label for="other_status">Other (please specify)</label>
+					</div>
+					<div class="input_container">
+						<input type="text" class="contact_input" placeholder="If other, please specify" name="work_status_other">
+					</div>
+				</div>
+
+				<!-- References -->
+				<div class="form_section">
+					<h4>References</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<h5>Reference 1</h5>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Name" name="ref1_name">
+							</div>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Company/Organization" name="ref1_company">
+							</div>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Position" name="ref1_position">
+							</div>
+							<div class="input_container">
+								<input type="tel" class="contact_input" placeholder="Phone Number" name="ref1_phone">
+							</div>
+							<div class="input_container">
+								<input type="email" class="contact_input" placeholder="Email" name="ref1_email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5>Reference 2</h5>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Name" name="ref2_name">
+							</div>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Company/Organization" name="ref2_company">
+							</div>
+							<div class="input_container">
+								<input type="text" class="contact_input" placeholder="Position" name="ref2_position">
+							</div>
+							<div class="input_container">
+								<input type="tel" class="contact_input" placeholder="Phone Number" name="ref2_phone">
+							</div>
+							<div class="input_container">
+								<input type="email" class="contact_input" placeholder="Email" name="ref2_email">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- File Uploads -->
+				<div class="form_section">
+					<h4>Documents</h4>
+					<div class="file_upload">
+						<label for="cv_upload"><strong>Upload CV/Resume:</strong></label>
+						<input type="file" id="cv_upload" name="cv" accept=".pdf,.doc,.docx" required>
+					</div>
+					<div class="file_upload">
+						<label for="cover_letter"><strong>Upload Cover Letter (Optional):</strong></label>
+						<input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx">
+					</div>
+					<div class="file_upload">
+						<label for="certificates"><strong>Upload Certificates/Qualifications:</strong></label>
+						<input type="file" id="certificates" name="certificates" accept=".pdf,.jpg,.png" multiple>
+					</div>
+				</div>
+
+				<!-- Additional Information -->
+				<div class="form_section">
+					<h4>Additional Information</h4>
+					<div class="input_container">
+						<textarea class="contact_input contact_text_area" placeholder="Why do you want to work in healthcare? What makes you suitable for this role?" name="additional_info" rows="4"></textarea>
+					</div>
+				</div>
+
+				<!-- Additional Personal Details -->
+				<div class="form_section">
+					<h4>Additional Personal Details</h4>
+					<div class="legal_text">
+						<p><strong>Applicants are requested to tick the relevant option to enable the organisation to monitor its equal opportunity. Monitoring is recommended by the codes of practice for the elimination of racial discrimination and for the elimination of discrimination on the grounds of sex and marital status. This information is used for no other purpose and will be treated as confidential.</strong></p>
+					</div>
+					
+					<div style="margin-bottom: 20px;">
+						<label style="font-weight: 500; margin-bottom: 15px; display: block;">Ethnicity (Please select one):</label>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="checkbox_group">
+									<input type="radio" id="white_irish" name="ethnicity" value="white_irish">
+									<label for="white_irish">White - Irish</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="white_other" name="ethnicity" value="white_other">
+									<label for="white_other">White - Other</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="mixed_other" name="ethnicity" value="mixed_other">
+									<label for="mixed_other">Mixed - Other</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="black_caribbean" name="ethnicity" value="black_caribbean">
+									<label for="black_caribbean">Black/Black British - Caribbean</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="black_african" name="ethnicity" value="black_african">
+									<label for="black_african">Black/Black British - African</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="black_other" name="ethnicity" value="black_other">
+									<label for="black_other">Black/Black British - Other</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="checkbox_group">
+									<input type="radio" id="mixed_white_black_african" name="ethnicity" value="mixed_white_black_african">
+									<label for="mixed_white_black_african">Mixed - White and Black African</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="mixed_white_asian" name="ethnicity" value="mixed_white_asian">
+									<label for="mixed_white_asian">Mixed - White and Asian</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="other_asian" name="ethnicity" value="other_asian">
+									<label for="other_asian">Other Asian Background</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="chinese" name="ethnicity" value="chinese">
+									<label for="chinese">Chinese</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="arab" name="ethnicity" value="arab">
+									<label for="arab">Arab</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="other_ethnicity" name="ethnicity" value="other">
+									<label for="other_ethnicity">Other</label>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 10px;">
+							<div class="col-md-12">
+								<div class="checkbox_group">
+									<input type="radio" id="asian_pakistani" name="ethnicity" value="asian_pakistani">
+									<label for="asian_pakistani">Asian/Asia British - Pakistani</label>
+								</div>
+								<div class="checkbox_group">
+									<input type="radio" id="asian_bangladeshi" name="ethnicity" value="asian_bangladeshi">
+									<label for="asian_bangladeshi">Asian/Asian British Bangladeshi</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="margin-bottom: 20px;">
+						<label style="font-weight: 500; margin-bottom: 15px; display: block;">Gender (Please select one):</label>
+						<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+							<input type="radio" id="male" name="gender" value="male">
+							<label for="male">Male</label>
+						</div>
+						<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="female">Female</label>
+						</div>
+						<div class="radio_group" style="display: inline-block; margin-right: 30px;">
+							<input type="radio" id="bisexual" name="gender" value="bisexual">
+							<label for="bisexual">Bi-sexual</label>
+						</div>
+						<div class="radio_group" style="display: inline-block;">
+							<input type="radio" id="heterosexual" name="gender" value="heterosexual">
+							<label for="heterosexual">Heterosexual</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Recruitment Policy -->
+				<div class="form_section">
+					<h4>Recruitment Policy</h4>
+					<div class="legal_text">
+						<p>It is the organisation's policy to employ the best qualified personnel and provide equal opportunity for the advancement of employees including promotion and not to discriminate against any person because of race colour, ethnic origin, national origin, sex sexual orientation, religion or belief, pregnancy, trans-gender status, marital or civil partnership status, age or disability.</p>
+						<br>
+						<p>I authorise the organisation to obtain references to support this application once an offer has been made and accepted and release the organisation and referees from any liability caused by giving and receiving information.</p>
+					</div>
+				</div>
+
+				<!-- Declaration -->
+				<div class="form_section">
+					<h4>Declaration</h4>
+					<div class="legal_text">
+						<p>I confirm that the information given on this form is to the best of my knowledge, true and complete. Any false statement will be sufficient cause for rejection or dismissal, if employed.</p>
+					</div>
+					
+					<div class="row" style="margin-top: 20px;">
+						<div class="col-md-4">
+							<div class="input_container" style="margin-bottom: 15px;">
+								<input type="text" class="contact_input" placeholder="Full Name" name="declaration_name" required>
+								<label style="position: absolute; top: -20px; left: 15px; font-size: 12px; color: #666; background: white; padding: 0 5px;">Name</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="input_container" style="margin-bottom: 15px;">
+								<input type="text" class="contact_input" placeholder="Electronic Signature" name="declaration_signature" required>
+								<label style="position: absolute; top: -20px; left: 15px; font-size: 12px; color: #666; background: white; padding: 0 5px;">Signature</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="input_container" style="margin-bottom: 15px; position: relative;">
+								<input type="date" class="contact_input" name="declaration_date" required style="padding-top: 25px;">
+								<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Date</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="checkbox_group" style="margin-top: 20px;">
+						<input type="checkbox" id="final_declaration" name="final_declaration" required>
+						<label for="final_declaration">I declare that the information provided in this application is true and complete. I understand that any false information may lead to the rejection of my application or termination of employment.</label>
+					</div>
+					<div class="checkbox_group">
+						<input type="checkbox" id="data_protection" name="data_protection" required>
+						<label for="data_protection">I consent to Experience Agency Ltd processing my personal data for recruitment purposes in accordance with GDPR regulations.</label>
+					</div>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="text-center">
+					<button type="submit" class="button contact_button">
+						<span>Submit Application</span>
+					</button>
+				</div>
+
+			</form>
+
+			<!-- Medical Questionnaire Section -->
+			<div style="margin-top: 50px; padding: 30px 0; border-top: 3px solid #20d34a;">
+				<div class="section_title"><h2>Confidential Medical Questionnaire - Comprehensive <span aria-label="medical" role="img">🏥</span></h2></div>
+				
+				<div class="legal_text" style="margin-bottom: 30px;">
+					<p><strong>Warning to employers:</strong> In view of the Equality Act 2010's ban on asking pre-employment questions about an applicant's health, employers are strongly advised not to request any information from a potential employee until after the job has been offered.</p>
+				</div>
+
+				<form action="#" id="medical_form" class="contact_form">
+					<div class="form_section">
+						<div style="margin-bottom: 20px;">
+							<p style="font-weight: 500; margin-bottom: 15px;">Please complete the questionnaire below. The information is required with your interests in mind.</p>
+						</div>
+
+						<!-- Medical Questions Table -->
+						<div style="overflow-x: auto;">
+							<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+								<thead>
+									<tr>
+										<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; width: 50%;">A. Have you ever:</th>
+										<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: center; width: 15%;">Yes</th>
+										<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: center; width: 15%;">No</th>
+										<th style="border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; width: 20%;">Give details</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">1. Had an operation?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="operation_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="operation_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="operation_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">2. Been seriously injured?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="injured_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="injured_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="injured_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">3. Had a serious physical or mental illness?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="illness_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="illness_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="illness_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">4. Received in-patient treatment for a physical or mental condition?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="treatment_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="treatment_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="treatment_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">5. Been refused or dismissed from employment for health reasons?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="dismissed_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="dismissed_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="dismissed_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">6. Received a disability pension?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="pension_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="pension_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="pension_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">7. Had a disability?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="disability_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="disability_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="disability_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">8. Been made ill by your work?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="work_ill_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="work_ill_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="work_ill_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+									<tr>
+										<td style="border: 1px solid #ddd; padding: 12px;">9. Been refused a driver's licence because of ill health?</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="licence_refused_yes" value="yes">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+											<input type="checkbox" name="licence_refused_no" value="no">
+										</td>
+										<td style="border: 1px solid #ddd; padding: 8px;">
+											<input type="text" class="contact_input" placeholder="Details" name="licence_refused_details" style="border: none; background: transparent; width: 100%;">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Vaccination Questions -->
+						<div style="margin-top: 30px;">
+							<div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px;">
+								<p style="font-weight: 500; margin-bottom: 15px;">Been immunised/vaccinated against any infectious illness such as influenza or hepatitis? Include dates of most recent vaccinations to indicate if they are up to date.</p>
+								<div class="row">
+									<div class="col-md-6" style="text-align: center;">
+										<input type="checkbox" name="vaccinated_yes" value="yes" style="margin-bottom: 10px;">
+										<label>Yes</label>
+									</div>
+									<div class="col-md-6" style="text-align: center;">
+										<input type="checkbox" name="vaccinated_no" value="no" style="margin-bottom: 10px;">
+										<label>No</label>
+									</div>
+								</div>
+								<div style="margin-top: 15px;">
+									<textarea class="contact_input contact_text_area" placeholder="Please provide details of vaccinations and dates..." name="vaccination_details" rows="3"></textarea>
+								</div>
+							</div>
+
+							<div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px;">
+								<p style="font-weight: 500; margin-bottom: 15px;">Are you prepared to be vaccinated against any infectious illness that you might be at risk of catching through your work? If not, please give reasons so that the organisation's policy can be discussed with you.</p>
+								<div class="row">
+									<div class="col-md-6" style="text-align: center;">
+										<input type="checkbox" name="prepared_vaccinated_yes" value="yes" style="margin-bottom: 10px;">
+										<label>Yes</label>
+									</div>
+									<div class="col-md-6" style="text-align: center;">
+										<input type="checkbox" name="prepared_vaccinated_no" value="no" style="margin-bottom: 10px;">
+										<label>No</label>
+									</div>
+								</div>
+								<div style="margin-top: 15px;">
+									<textarea class="contact_input contact_text_area" placeholder="If no, please provide reasons..." name="vaccination_reasons" rows="3"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<!-- Health Conditions Table -->
+						<div style="margin-top: 30px;">
+							<p style="font-weight: 500; margin-bottom: 15px;">B. Do you suffer from or have you ever had:</p>
+							<div style="overflow-x: auto;">
+								<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+									<tbody>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px; width: 16%;">High blood pressure</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center; width: 8%;">
+												<label>Yes</label> <input type="checkbox" name="high_bp_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center; width: 8%;">
+												<label>No</label> <input type="checkbox" name="high_bp_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; width: 16%;">Anaemia</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center; width: 8%;">
+												<label>Yes</label> <input type="checkbox" name="anaemia_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center; width: 8%;">
+												<label>No</label> <input type="checkbox" name="anaemia_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; width: 16%;">Menstruation or prostate problems</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center; width: 10%;">
+												<label>Yes</label> <input type="checkbox" name="prostate_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="prostate_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Asthma</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="asthma_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="asthma_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Headaches (frequent)</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="headaches_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="headaches_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Varicose veins</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="varicose_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="varicose_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Cough (frequent)</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="cough_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="cough_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Heart trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="heart_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="heart_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Rupture</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="rupture_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="rupture_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Rheumatic fever</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="rheumatic_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="rheumatic_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Chest trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="chest_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="chest_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Back trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="back_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="back_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Arthritis</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="arthritis_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="arthritis_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Fainting or dizziness</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="fainting_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="fainting_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Ear trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="ear_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="ear_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Epilepsy/fits</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="epilepsy_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="epilepsy_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Hay fever</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="hay_fever_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="hay_fever_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Eye trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="eye_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="eye_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Shortness of breath</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="breath_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="breath_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Jaundice</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="jaundice_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="jaundice_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Nerve trouble</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="nerve_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="nerve_no" value="no">
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 12px;">Stroke</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="stroke_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="stroke_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Depression</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="depression_yes" value="yes">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>No</label> <input type="checkbox" name="depression_no" value="no">
+											</td>
+											<td style="border: 1px solid #ddd; padding: 12px;">Anxiety/Stress</td>
+											<td style="border: 1px solid #ddd; padding: 12px; text-align: center;">
+												<label>Yes</label> <input type="checkbox" name="anxiety_yes" value="yes">
+												<label>No</label> <input type="checkbox" name="anxiety_no" value="no">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- Final Questions Section -->
+						<div style="margin-top: 30px;">
+							<div style="overflow-x: auto;">
+								<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+									<tbody>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 15px; width: 25%; vertical-align: top;">
+												<strong>Do you take medicine regularly?</strong>
+												<div style="margin-top: 10px;">
+													<input type="radio" name="medicine_regular" value="yes" id="medicine_yes">
+													<label for="medicine_yes">Yes</label><br>
+													<input type="radio" name="medicine_regular" value="no" id="medicine_no">
+													<label for="medicine_no">No</label>
+												</div>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; width: 25%; vertical-align: top;">
+												<strong>Have you worked in a dusty trade?</strong>
+												<div style="margin-top: 10px;">
+													<input type="radio" name="dusty_trade" value="yes" id="dusty_yes">
+													<label for="dusty_yes">Yes</label><br>
+													<input type="radio" name="dusty_trade" value="no" id="dusty_no">
+													<label for="dusty_no">No</label>
+												</div>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; width: 25%; vertical-align: top;">
+												<strong>Do you suffer from or have you ever had a head injury?</strong>
+												<div style="margin-top: 10px;">
+													<input type="radio" name="head_injury" value="yes" id="head_yes">
+													<label for="head_yes">Yes</label><br>
+													<input type="radio" name="head_injury" value="no" id="head_no">
+													<label for="head_no">No</label>
+												</div>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; width: 25%; vertical-align: top;">
+												<strong>Do you suffer from any other ailments?</strong>
+												<div style="margin-top: 10px;">
+													<input type="radio" name="other_ailments" value="yes" id="other_yes">
+													<label for="other_yes">Yes</label><br>
+													<input type="radio" name="other_ailments" value="no" id="other_no">
+													<label for="other_no">No</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td style="border: 1px solid #ddd; padding: 15px; height: 150px; vertical-align: top;">
+												<textarea class="contact_input contact_text_area" placeholder="Please list all medications..." name="medicine_details" rows="5" style="height: 100%; border: none; background: transparent; resize: none;"></textarea>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; height: 150px; vertical-align: top;">
+												<textarea class="contact_input contact_text_area" placeholder="Please provide details..." name="dusty_trade_details" rows="5" style="height: 100%; border: none; background: transparent; resize: none;"></textarea>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; height: 150px; vertical-align: top;">
+												<textarea class="contact_input contact_text_area" placeholder="Please provide details..." name="head_injury_details" rows="5" style="height: 100%; border: none; background: transparent; resize: none;"></textarea>
+											</td>
+											<td style="border: 1px solid #ddd; padding: 15px; height: 150px; vertical-align: top;">
+												<textarea class="contact_input contact_text_area" placeholder="Please provide details..." name="other_ailments_details" rows="5" style="height: 100%; border: none; background: transparent; resize: none;"></textarea>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- Medical Declaration Section -->
+						<div style="margin-top: 30px; border: 2px solid #333; padding: 20px;">
+							<p style="font-weight: 500; margin-bottom: 15px;">To the best of my knowledge and belief, the information given above is correct. I understand that if I am appointed and this information is deliberate, I am liable to dismissal.</p>
+							
+							<div class="row" style="margin-top: 20px;">
+								<div class="col-md-3">
+									<div class="input_container" style="margin-bottom: 15px;">
+										<input type="text" class="contact_input" placeholder="Signature Name" name="medical_signature_name" required>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="input_container" style="margin-bottom: 15px; position: relative;">
+										<input type="date" class="contact_input" name="medical_date" required style="padding-top: 25px;">
+										<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Date</label>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="input_container" style="margin-bottom: 15px;">
+										<input type="text" class="contact_input" placeholder="Department" name="medical_department">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="input_container" style="margin-bottom: 15px;">
+										<input type="text" class="contact_input" placeholder="Job title" name="medical_job_title">
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="input_container" style="margin-bottom: 15px;">
+										<input type="text" class="contact_input" placeholder="Employee number" name="medical_employee_number">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="input_container" style="margin-bottom: 15px; position: relative;">
+										<input type="date" class="contact_input" name="medical_application_date" style="padding-top: 25px;">
+										<label style="position: absolute; top: 5px; left: 15px; font-size: 12px; color: #666; font-weight: 500;">Date of application or transfer</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Medical Form Submit Button -->
+						<div class="text-center" style="margin-top: 30px;">
+							<button type="submit" class="button contact_button">
+								<span>Submit Medical Questionnaire</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 footer_col">
+						<div class="footer_about">
+							<div class="footer_logo_container">
+								<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+									<div class="logo_content">
+										<div class="logo d-flex flex-row align-items-center justify-content-center">
+											<div class="logo_text">EXPERIENCE<span> AGENCY</span></div>
+											<div class="logo_box"></div>
+										</div>
+										<div class="logo_sub">LTD</div>
+									</div>
+								</a>
+							</div>
+							<div class="footer_about_text">
+								<p>Contact our healthcare recruitment agency in London today</p>
+							</div>
+							<ul class="footer_about_list">
+								<li><div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div><span>01452 238415 </span></li>
+								<li><div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div><span>beatrice@experiencerecruitment.com</span></li>
+								<li><div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div><span>1 Elmfield Park, Bromley, BR1 1LU</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-4 footer_col">
+						<div class="footer_links footer_column">
+							<div class="footer_title">Useful Links <span aria-label="link" role="img">🔗</span></div>
+							<ul>
+								<li><a href="nurses.html">Nursing Staff</a></li>
+								<li><a href="assistants.html">Shopping Assistants</a></li>
+								<li><a href="cleaners.html">Cleaners</a></li>
+								<li><a href="workers.html">Healthcare Workers</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="copyright_content d-flex flex-lg-row flex-column align-items-lg-center justify-content-start">
+							<div class="cr">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</div>
+							<div class="footer_social ml-lg-auto">
+								<ul>
+									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/application.js"></script>
+</body>
+</html>
